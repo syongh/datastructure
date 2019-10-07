@@ -2,7 +2,7 @@
 #include"sort.h"
 int main(){
 	
-	int arr[10] = {0};
+	int arr[10];
 	int ch;
 	while(1){
 		printf("1.冒泡算法\n");
@@ -22,8 +22,10 @@ int main(){
 				break;	
 		};
 
-		for(int i = 0; i < 10; i++)
+		for(int i = 0; i < 10; i++){
 			printf("%d  ",arr[i]);
+		}
+		printf("\n");
 	}
-
+	return 0;
 }
