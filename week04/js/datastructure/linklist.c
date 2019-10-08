@@ -9,7 +9,7 @@ int go_on(){
 	int flag=1;
 	char choice;
 	while(1){
-		printf("继续吗？[Y/N]");
+		printf("继续吗？[Y/N]\n");
 		choice=getchar();
 		if(choice=='Y'||choice=='y')
 				break;
@@ -85,7 +85,7 @@ void insert(linklist *l){
 
 
 void bubblesort(linklist *l){
-	int len=length_linklist(*head);
+	int len=length_linklist(l);
 	linklist *temp;
 	for(int i=0;i<len-1;i++){
 		linklist *t =l;
@@ -117,6 +117,8 @@ int main(){
 	printf("print the headnode's data\n");
 	scanf("%d",&d);
 	linklist *head=create_linklist(d);
+	insert(head);
+
 	return  0;
 }
 
