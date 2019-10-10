@@ -1,0 +1,48 @@
+1.apt-get install gdb
+2.报错执行
+apt-get install libc6-dev-i386
+3.gdb xxx(二进制文件)
+4.学习相关命令
+run 执行
+quit 退出
+list 查看源码
+backtrack 打印函数栈信息
+next 执行下一行
+step 一次执行一行，遇到函数会进入
+finish 运行到函数结束
+continue 继续运行
+break 设置断点
+info breakpoint 显示断点信息
+delete 删除断点
+print 打印表达式的值
+until 执行到指定的行
+info 显示信息
+!shell  xxx 执行外部命令
+
+
+break 行号
+break 文件名：行号
+break 函数名
+delete num 删除断点
+disable/enable  num 关闭启用断点
+
+info xxx 打印当前断点处所在函数的变量值，不包括函数参数
+print 变量或表达式 可打印当前函数的变量值，全局变量值（可以打印格式）
+
+next n 单步调试，函数调用单做一条指令
+
+step n 单步执行n次会进入函数
+
+finish 执行程序到当前函数
+
+continue 执行程序到下一个断点
+
+until N 执行到源代码某一行
+
+run
+info proc mappings 可以查看待调试进程的内存分布情况
+
+
+backtrack 、where、 info stack 这三个命令查看函数的调用情况
+
+backtrack full、 where full、 info stack full 这三个命令查看函数的调用情况， 打印所有局部变量的值 
